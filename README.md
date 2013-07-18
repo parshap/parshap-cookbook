@@ -16,4 +16,5 @@ This cookbook is used by [devbox](https://github.com/parshap/devbox) to
 provision my personal development environment but can also be used in
 other configurations to simply create and configure a user account for
 me. This cookbook expects the node to already have some software
-installed (zsh, git, node.js).
+installed (zsh, git, node.js) and my private key to be available during
+provisioning.
