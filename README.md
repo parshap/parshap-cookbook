@@ -6,7 +6,7 @@ This cookbook does the following:
  * Creates the `parshap` user account and bootstraps it with
    `authorized_keys` and `known_hosts` files
 
- * Installs my [personal dotfiles](https://github.com/dotfiles)
+ * Installs my [personal dotfiles](https://github.com/parshap/dotfiles)
 
  * Installs [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
