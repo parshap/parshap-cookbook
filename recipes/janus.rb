@@ -1,10 +1,6 @@
 HOME = "/home/parshap"
 JANUS = "#{HOME}/.vim"
 
-%w{curl vim vim-nox rake ruby-dev exuberant-ctags git-core}.each do |pkg|
-  package pkg
-end
-
 bash "parshap janus install" do
   code <<-EOH
     sudo -Hu parshap bash -c "
