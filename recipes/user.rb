@@ -19,11 +19,19 @@ end
 
 # Create user account
 group NAME
-user NAME do
+
+user_resource = user NAME do
   gid NAME
   supports :manage_home => true
   home HOME
-  shell "/bin/zsh"
+  action :nothing
+end
+
+ruby_block "#{NAME} create user" do
+  block do
+    user_resource.shell `which zsh`.chop
+    user_resource.run_action(:create)
+  end
 end
 
 # Reload ohai data
