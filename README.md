@@ -1,10 +1,12 @@
 This is a chef cookbook to create and configure my personal user
-account, `parshap`.
+account, `parshap`. It is tested in Ubuntu and SmartOS.
 
 This cookbook does the following:
 
  * Creates the `parshap` user account and bootstraps it with
    `authorized_keys` and `known_hosts` files
+
+ * Installs git, zsh, vim, tmux, ndoejs
 
  * Installs my [personal dotfiles](https://github.com/parshap/dotfiles)
 
@@ -15,6 +17,5 @@ This cookbook does the following:
 This cookbook is used by [devbox](https://github.com/parshap/devbox) to
 provision my personal development environment but can also be used in
 other configurations to simply create and configure a user account for
-me. This cookbook expects the node to already have some software
-installed (zsh, git, node.js) and my private key to be available during
+me. This cookbook expects my private key to be available during
 provisioning.
