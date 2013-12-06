@@ -30,12 +30,6 @@ end
   plugin "passwd"
 end).run_action(:reload)
 
-# Allow passwordless sudo
-sudo NAME do
-  user NAME
-  nopasswd true
-end
-
 # Create ~/.ssh
 parshap_directory "#{HOME}/.ssh" do
   mode "0700"
