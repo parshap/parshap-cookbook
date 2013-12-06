@@ -34,6 +34,11 @@ ruby_block "#{NAME} create user" do
   end
 end
 
+# Account needs to be unlocked to remote login in SmartOS
+if platform?("smartos") then
+  bash "passwd -u #{NAME}"
+end
+
 # Reload ohai data
 (ohai "reload passwd" do
   action :reload
