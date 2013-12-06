@@ -9,3 +9,11 @@ git DOTFILES do
   group "parshap"
   action :sync
 end
+
+bash "parshap dotfiles install" do
+  code <<-EOH
+    sudo -Hu parshap bash -c "
+      cd #{DOTFILES} && make
+    "
+  EOH
+end
