@@ -18,7 +18,9 @@ def parshap_directory(name, &block)
 end
 
 # Create user account
+group NAME
 user NAME do
+  gid NAME
   supports :manage_home => true
   home HOME
   shell "/bin/zsh"
