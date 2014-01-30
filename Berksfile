@@ -1,5 +1,0 @@
-cookbook "git"
-cookbook "zsh"
-cookbook "vim"
-cookbook "tmux"
-cookbook "nodejs"
