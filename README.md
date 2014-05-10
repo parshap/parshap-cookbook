@@ -6,7 +6,8 @@ This cookbook does the following:
  * Creates the `parshap` user account and bootstraps it with
    `authorized_keys` and `known_hosts` files
 
- * Installs git, zsh, vim, tmux, nodejs
+ * Removes default `/etc/tmux.conf` tmux configuration file which
+   conflicts with local user tmux configuration
 
  * Installs my [personal dotfiles](https://github.com/parshap/dotfiles)
 
