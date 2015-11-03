@@ -42,7 +42,7 @@ end
 # Reload ohai data
 (ohai "reload passwd" do
   action :reload
-  plugin "passwd"
+  plugin "etc"
 end).run_action(:reload)
 
 # Create ~/.ssh
